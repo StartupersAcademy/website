@@ -1,16 +1,15 @@
 # Setup
-title:               Utterson
-tagline:             The Jekyll Companion
-url:                 http://utterson.alidcastano.com
-analytics_id:        UA-53335201-2
+title:               Startupers
+tagline:             We save you time
+url:                 http://www.startupers.io
+analytics_id:        UA-5126579-44
 
 # About/contact
 author:
-  name:                Alid Castano
-  email:               "" # email here 
-  avatar:              img/avatar.jpg 
-  profile-pic:         img/profile-pic.jpg
-
+  name:                Startupers
+  email:               "todo@startupers.io" # email here 
+  avatar:              img/logo.png 
+  profile-pic:         img/logo-black.png
 
 
 # Build settings
@@ -29,7 +28,7 @@ defaults:
       type: "posts" 
     values:
       layout: "post"
-      author: Gabriel Utterson
+      author: Startupers
   -
     scope:
       path: "" 
