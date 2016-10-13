@@ -17,7 +17,8 @@ Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 a
 
 Do you want read something? 
 
-Go to our [Blog](https://medium.com/startupers).
+Go to our <a href="{{ site.url }}/allpost">Blog</a>.
+
 
 Do you want see our Templates? 
 
