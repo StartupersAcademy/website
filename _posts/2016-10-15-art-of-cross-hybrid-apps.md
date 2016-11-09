@@ -7,7 +7,6 @@ categories: ionic2
 comments: true
 author: carlosrojas
 cover: "https://cdn-images-1.medium.com/max/800/1*Pq2S2TRqVpSnurkKnhKbZw.png"
-draft: false
 ---
 
 As I write this article, I’ve been looking at an interesting technology called React Native.
