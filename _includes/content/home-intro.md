@@ -1,7 +1,7 @@
 
 # [Startupers](/)
 
-Do you have an amazing idea for build the next unicorn?
+Do you have an amazing idea building the next unicorn?
 
 Let us help you, we create amazing starters, tutorials and videos that let you have your MVP ready to go.
 
