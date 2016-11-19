@@ -11,7 +11,11 @@
   </title>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-  
+
+  {% if page.title == "Register" %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/lib/bootstrap/dist/css/bootstrap.min.css">
+  {% endif%}
+
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 

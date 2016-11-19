@@ -5,6 +5,10 @@
 <script src="/lib/custom/home-accordion-tabs.js"></script>
 {% endif %}
 
+{% if page.type == "Register" %}
+<script src="{{ site.baseurl }}/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+{% endif %}
+
 {% if page.type != "Home" %}
 <script src="/lib/custom/post-scroll-triggers.js"></script>
 {% endif %}
