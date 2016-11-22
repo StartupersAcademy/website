@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 4: Objects."
 tags: ionic2, firebase3
-date: 2016-11-04
+date: 2016-12-16
 categories: ionic2
 comments: true
 author: carlosrojas

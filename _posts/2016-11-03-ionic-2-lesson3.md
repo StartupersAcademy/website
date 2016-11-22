@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 3: User Authentication."
 tags: ionic2, firebase3
-date: 2016-11-03
+date: 2016-12-09
 categories: ionic2
 comments: true
 author: carlosrojas

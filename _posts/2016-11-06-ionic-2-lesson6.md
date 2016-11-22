@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 6: Theming"
 tags: ionic2, firebase3
-date: 2016-11-06
+date: 2016-12-30
 categories: ionic2
 comments: true
 author: carlosrojas

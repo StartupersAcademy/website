@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 7: Deploying"
 tags: ionic2, firebase3
-date: 2016-11-07
+date: 2017-01-06
 categories: ionic2
 comments: true
 author: carlosrojas

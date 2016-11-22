@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 2: Fundamentals"
 tags: ionic2, firebase3
-date: 2016-11-02
+date: 2016-12-02
 categories: ionic2
 comments: true
 author: carlosrojas
