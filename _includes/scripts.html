@@ -5,7 +5,7 @@
 <script src="/lib/custom/home-accordion-tabs.js"></script>
 {% endif %}
 
-{% if page.type == "Signin" %}
+{% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
 <script src="{{ site.baseurl }}/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 {% endif %}
 

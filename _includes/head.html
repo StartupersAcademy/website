@@ -12,8 +12,11 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 
-  {% if page.title == "Signin" %}
+  {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
   <link rel="stylesheet" href="{{ site.baseurl }}/lib/bootstrap/dist/css/bootstrap.min.css">
+  {% endif%}
+  {% if page.title == "Dashboard" %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/dashboard.css">
   {% endif%}
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
