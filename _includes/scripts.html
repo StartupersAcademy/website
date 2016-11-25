@@ -31,7 +31,13 @@
 <!-- End Firebase -->
 
 {% if page.title == "Signup" %}
-<script src="{{ site.baseurl }}/admin/register.js"></script>
+<script src="{{ site.baseurl }}/admin/signup.js"></script>
+{% endif %}
+{% if page.title == "Signin" %}
+<script src="{{ site.baseurl }}/admin/signin.js"></script>
+{% endif %}
+{% if page.title == "Dashboard" %}
+<script src="{{ site.baseurl }}/admin/dashboard.js"></script>
 {% endif %}
 
 {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
