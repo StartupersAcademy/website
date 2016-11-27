@@ -1,7 +1,7 @@
-
+(function () {
 function register(email,password){
 console.log("info:" + email + " " + password); 
-firebase.auth().signInWithEmailAndPassword(email, password).
+firebase.auth().createUserWithEmailAndPassword(email, password).
 catch(function(error) {
   // Handle Errors here.
   console.log("Error Code: " + error.code + " Error message: " + error.message);
@@ -15,4 +15,4 @@ $('#btn-signup').on('click',function(event){
     register($('#email').val(),$('#passwd').val());
 }
 );
-
+})();

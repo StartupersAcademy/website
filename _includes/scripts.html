@@ -5,13 +5,6 @@
 <script src="/lib/custom/home-accordion-tabs.js"></script>
 {% endif %}
 
-
-{% if page.title == "Dashboard" %}
-<script src="/lib/tether/dist/tether.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="https://github.com/twbs/bootstrap/blob/v4-dev/docs/assets/js/vendor/holder.min.js"></script>
-{% endif %}
-
 <!-- Firebase SDK -->
 {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
 
@@ -37,6 +30,7 @@
 <script src="{{ site.baseurl }}/admin/signin.js"></script>
 {% endif %}
 {% if page.title == "Dashboard" %}
+<script src="{{ site.baseurl }}/admin/functions.js"></script>
 <script src="{{ site.baseurl }}/admin/dashboard.js"></script>
 {% endif %}
 
