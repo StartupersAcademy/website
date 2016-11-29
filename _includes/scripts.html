@@ -5,6 +5,14 @@
 <script src="/lib/custom/home-accordion-tabs.js"></script>
 {% endif %}
 
+{% if page.path contains '_posts' %}
+<script src="/lib/custom/readingTime.js"></script>
+<script>
+$('article').readingTime();
+</script>
+{% else %}
+{% endif %}
+
 <!-- Firebase SDK -->
 {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
 

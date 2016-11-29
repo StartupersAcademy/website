@@ -11,7 +11,7 @@ cover: "https://firebasestorage.googleapis.com/v0/b/startupers-9cbb6.appspot.com
 
 <img src="https://firebasestorage.googleapis.com/v0/b/startupers-9cbb6.appspot.com/o/AAEAAQAAAAAAAAd1AAAAJGU4ZDc4OTAzLWQzYzktNGQ2Ny1iODU3LWUxYzQyMjY4YzA5OA.png?alt=media&token=17030062-508e-43b2-9cf3-aef7563883e0" />
 
-Hello there!! and welcome to this travel called Ionic 2. 
+Hello Startupers!! and welcome to this travel called Ionic 2. 
 
 First of all i want to do a distinction between Ionic 1 and Ionic 2
 if it's your first time exploring Hybrid Apps maybe you can be confussed because people is talking about Ionic 1 and Ionic 2 
