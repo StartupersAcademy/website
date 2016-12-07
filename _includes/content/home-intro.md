@@ -24,5 +24,9 @@ Do you want see our Templates?
 
 Check this out [Marketplace](http://market.startupers.io)
 
+Quieres leer en Español? 
+
+Ir a [ion-book](http://www.ion-book.com)
+
 
 
