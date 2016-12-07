@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 2: Fundamentals"
 tags: ionic2
-date: 2016-11-02
+date: 2016-12-09
 categories: ionic2
 comments: true
 author: carlosrojas
@@ -238,6 +238,8 @@ The important thing here is that you need remember that you gonna use Angular 2.
 Ok, this is everything for now. In 6 or 7 days from received this in your email you going to receive the next lesson. but, meanwhile you can read the next links :)
 
 [Angular 2 Intro](http://j.mp/2gRgW9A)
+
 [Angular 2 Series](http://j.mp/1zaQGbP)
+
 [Angular 2 Cheatsheet](http://j.mp/2gReoIz)
 

@@ -18,6 +18,17 @@ First of all, it is important to understand the range of technologies nowadays. 
 
 <img src="https://cdn-images-1.medium.com/max/800/1*Pq2S2TRqVpSnurkKnhKbZw.png" class="img-responsive">
 
+
+*Are you enjoying this Post?*
+
+*Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 and Ionic Cloud.*
+
+<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
+<input name="seller_id" type="hidden" value="8823315497069">
+<input name="email" placeholder="Your email address" type="email">
+<button data-custom-highlight-color="" type="submit">Subscribe</button>
+</form>
+
 **Hybrid Apps:** These are constructed in top of Apache Cordova and basically they allow you to develop an app using HTML + CSS + JS surrounded by a Webview (specifying the Android or IOS SDK) which gives you access to the native characteristics of the device and allow you to extend the functionality through plugins (small pieces of Java or Swift code — Objective C). This classification is much more complete in Ionic Framework.
 
 **Cross Platform App:** The Apps created through these technologies are native (They don’t only include a Webview). Its principal characteristic is that they are written in Javascript and they use a compiler to convert them into Native components. It is considered that React Native and NativeScript are the most important parts of this technology.

@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 1: Preparation"
 tags: ionic2
-date: 2016-11-01
+date: 2016-12-02
 categories: ionic2
 comments: true
 author: carlosrojas
@@ -162,3 +162,8 @@ you can read the next links :)
 [Ionic Cloud Services](http://j.mp/2gylULG)
 
 Please rate this [lesson here](https://carlosrojaso.typeform.com/to/Y07Lg9).Help us to improve :)
+
+Keep coding...
+
+Carlos Rojas
+@carlosrojas_o
