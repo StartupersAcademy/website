@@ -2,7 +2,7 @@
 layout: post
 title: "Lesson 2: Fundamentals"
 tags: ionic2
-date: 2016-12-09
+date: 2016-12-02
 categories: ionic2
 comments: true
 author: carlosrojas
