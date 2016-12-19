@@ -20,7 +20,7 @@ First of all, it is important to understand the range of technologies nowadays. 
 <img src="https://cdn-images-1.medium.com/max/800/1*Pq2S2TRqVpSnurkKnhKbZw.png" class="img-responsive">
 
 
-
+<br/>
 *Are you enjoying this Post?*
 
 *Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 and Ionic Cloud.*
@@ -30,7 +30,7 @@ First of all, it is important to understand the range of technologies nowadays. 
 <input name="email" placeholder="Your email address" type="email">
 <button data-custom-highlight-color="" type="submit">Subscribe</button>
 </form>
-
+<br>
 
 **Hybrid Apps:** These are constructed in top of Apache Cordova and basically they allow you to develop an app using HTML + CSS + JS surrounded by a Webview (specifying the Android or IOS SDK) which gives you access to the native characteristics of the device and allow you to extend the functionality through plugins (small pieces of Java or Swift code — Objective C). This classification is much more complete in [Ionic Framework](http://ionicframework.com/).
 

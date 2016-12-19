@@ -33,7 +33,7 @@ $ionic start myFirstApp --v2 blank
 
 Delete all the directories in ````src/pages/````
 
-Now, We going to need create some Pages and some Providers. to do this we going to use a CLI command called [generate](http://ionicframework.com/docs/v2/cli/generate/)
+Now, We going to need create some Pages. to do this we going to use a CLI command called [generate](http://ionicframework.com/docs/v2/cli/generate/)
 
 ````javascript
 $ ionic generate page NewsDetail
@@ -44,13 +44,56 @@ $ ionic generate page ResetPassword
 $ ionic generate page Signup
 ````
 
-That will generate all the pages we need, and then:
+That will generate all the pages we need, and then we need go to our ````src/app/app.module.ts```` and import all our news pages and remove the old ones, at the end we would to have something like this:
 
 ````javascript
-$ ionic generate provider NewsData
-$ ionic generate provider AuthData
-$ ionic generate provider ProfileData
+
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { NewsDetailPage } from '../pages/news-detail/news-detail';
+import { NewsListingPage } from '../pages/news-listing/news-listing';
+import { LoginPage } from '../pages/login/login';
+import { ProfilePage } from '../pages/profile/profile';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+import { SignupPage } from '../pages/signup/signup';
+
 ````
+
+And add the pages in NgModule
+
+````javascript
+
+@NgModule({
+  declarations: [
+    MyApp,
+    NewsDetailPage,
+    NewsListingPage,
+    LoginPage,
+    ProfilePage,
+    ResetPasswordPage,
+    SignupPage
+  ],
+  imports: [
+    IonicModule.forRoot(MyApp)
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    NewsDetailPage,
+    NewsListingPage,
+    LoginPage,
+    ProfilePage,
+    ResetPasswordPage,
+    SignupPage
+  ],
+  providers: []
+})
+export class AppModule {}
+
+````
+
+## Connecting our App with Ionic Cloud.
 
 Now, we need install the Cloud service client.
 
@@ -68,31 +111,194 @@ $ ionic io init
 
 ````
 
-In your ````src/app/app.module.ts```` file.
-
-We need delete this:
+Define a CloudSettings object for your app’s cloud settings. Replace APP_ID with your app’s ID, which you can find in your ````ionic.config.json```` file.
 
 ````javascript
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': 'APP_ID'
+  }
+};
 
 ````
 
-and this:
+And we need to add your cloud settings into ````CloudModule.forRoot()```` inside ````NgModule````
+
 
 ````javascript
 
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-    
+@NgModule({
+  declarations: [ ... ],
+  imports: [
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [ ... ],
+  providers: [ ... ]
+})
+
 ````
 
+Ok, in this point we should have everything connected.
+
+<br/>
+*Are you enjoying this Post?*
+
+*Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 and Ionic Cloud.*
+
+<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
+<input name="seller_id" type="hidden" value="8823315497069">
+<input name="email" placeholder="Your email address" type="email">
+<button data-custom-highlight-color="" type="submit">Subscribe</button>
+</form>
+<br/>
 
 
-Define a CloudSettings object for your app’s cloud settings. Replace APP_ID with your app’s ID, which you can find in your ionic.config.json file.
+## Creating the Login Page.
+
+If you remember we create some pages with the [ generate command ](http://ionicframework.com/docs/v2/cli/generate/) and you should have this pages in ```` src/pages/ ````
+
+<img src="https://firebasestorage.googleapis.com/v0/b/startupers-9cbb6.appspot.com/o/Posts%2Fdir_pages.png?alt=media&token=72d7dc02-5947-4700-ad31-97a6b00e10b0" alt="">
+
+We going to create our *login view* first we need open ```` src/pages/login/login.html ```` and add some components.
+
+### login.html 
+
+```` javascript
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="myForm" (ngSubmit)="loginUser()" padding class="loginpage">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label stacked>Email:</ion-label>
+        <ion-input formControlName="email" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="key" item-left></ion-icon>
+        <ion-label stacked>Password:</ion-label>
+        <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid">Login</button>
+    </div>
+  </form>
+  <div text-center>
+   <a block clear (click)="goToSignup()">
+      Create a new account
+    </a>
+
+    <a block clear (click)="goToResetPassword()">
+      I forgot my password
+    </a>
+  </div>
+</ion-content>
+
+````
+
+then we gonna add some styles ```` src/pages/login/login.scss ````:
+
+### login.scss 
+
+`````scss
+
+.login {
+  form {
+    margin-bottom: 32px;
+    button {
+      margin-top: 20px;
+    }
+  }
+  ion-label {
+    margin-left: 5px;
+  }
+
+  ion-input {
+    padding: 5px;
+  }
+
+}
+
+`````
+
+and we need add all the magic in the ts file
+
+### login.ts 
+
+````typescript
+
+import { Component } from '@angular/core';
+import { NavController, AlertController, LoadingController } from 'ionic-angular';
+import { Auth, User } from '@ionic/cloud-angular';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ResetPasswordPage } from '../reset-password/reset-password';
+import { SignupPage } from '../signup/signup';
+import { NewsListingPage } from '../news-listing/news-listing';
+
+@Component({
+  selector: 'page-login',
+  templateUrl: 'login.html'
+})
+export class LoginPage {
+   myForm: FormGroup;
+
+  constructor(
+    public navCtrl: NavController,
+    public formBuilder: FormBuilder,
+    public auth: Auth, 
+    public user: User
+  ) {
+    this.myForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
+
+  private loginUser(){
+
+    console.log("Email:" + this.myForm.controls['email'].value);
+    console.log("Password:" + this.myForm.controls['password'].value);
+   
+    let details = {'email': this.myForm.controls['email'].value, 'password': this.myForm.controls['password'].value};
+
+    this.auth.login('basic', details).then(() => {
+    console.log("User logging");
+    this.navCtrl.push(NewsListingPage);
+    }, (err) => {
+
+        console.log(err.message);
+
+        let errors = '';
+        if(err.message === 'UNPROCESSABLE ENTITY') errors += 'Email isn\'t valid.<br/>';
+        if(err.message === 'UNAUTHORIZED') errors += 'Password is required.<br/>';
+      }
+      );
+  
+
+  }
+
+  private goToSignup(){
+    this.navCtrl.push(SignupPage);
+  }
+
+  private goToResetPassword(){
+    this.navCtrl.push(ResetPasswordPage);
+  }
+
+
+}
+
+````
+
 

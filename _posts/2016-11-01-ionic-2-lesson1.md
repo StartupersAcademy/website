@@ -13,8 +13,9 @@ cover: "https://firebasestorage.googleapis.com/v0/b/startupers-9cbb6.appspot.com
 
 Hello Startupers!! and welcome to this travel called Ionic 2. 
 
-First of all i want to do a distinction between Ionic 1 and Ionic 2
-if it's your first time exploring Hybrid Apps maybe you can be confussed because people is talking about Ionic 1 and Ionic 2 
+First of all I want to do a distinction between Ionic 1 and Ionic 2
+
+If it's your first time exploring Hybrid Apps maybe you can be confussed because people is talking about Ionic 1 and Ionic 2 
 
 <i>are similars? it's the same? </i>
 
@@ -135,7 +136,22 @@ Now you can see something like this:
 
 <img src="https://firebasestorage.googleapis.com/v0/b/startupers-9cbb6.appspot.com/o/Posts%2FScreen%20Shot%202016-11-22%20at%201.11.37%20PM%20(1).png?alt=media&token=e4386080-b652-4afb-937d-11896518404a" width="100%" />
 
-Perfect!! now, we are almost ready. Additionally, you need and editor. you can find [good options here](http://ionicframework.com/docs/v2/resources/editors_and_ides/).
+Perfect!! now, we are almost ready. 
+
+
+<br/>
+*Are you enjoying this Post?*
+
+*Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 and Ionic Cloud.*
+
+<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
+<input name="seller_id" type="hidden" value="8823315497069">
+<input name="email" placeholder="Your email address" type="email">
+<button data-custom-highlight-color="" type="submit">Subscribe</button>
+</form>
+<br/>
+
+Additionally, you need and editor. you can find [good options here](http://ionicframework.com/docs/v2/resources/editors_and_ides/).
 
 I'm using Visual Studio Code. 
 
@@ -161,7 +177,7 @@ you can read the next links :)
 
 [Ionic Cloud Services](http://j.mp/2gylULG)
 
-Please rate this [lesson here](https://carlosrojaso.typeform.com/to/Y07Lg9).Help us to improve :)
+Please rate this [lesson here](https://carlosrojaso.typeform.com/to/Y07Lg9) and Help us to improve :)
 
 Keep coding...
 
