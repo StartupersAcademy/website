@@ -243,3 +243,9 @@ Ok, this is everything for now. In 6 or 7 days from received this in your email 
 
 [Angular 2 Cheatsheet](http://j.mp/2gReoIz)
 
+Please rate this [lesson here](https://carlosrojaso.typeform.com/to/Y07Lg9) and Help us to improve :)
+
+Keep coding...
+
+Carlos Rojas
+@carlosrojas_o

@@ -621,3 +621,10 @@ Ok, in this point you should to see something like this:
 Ok, this is everything for now. In 6 or 7 days since received this in your email you going to receive the next lesson. but, meanwhile you can read the next links :)  
 
 [Forms](https://ionicframework.com/docs/v2/resources/forms/){:target="_blank"}
+
+Please rate this [lesson here](https://carlosrojaso.typeform.com/to/Y07Lg9) and Help us to improve :)
+
+Keep coding...
+
+Carlos Rojas
+@carlosrojas_o
