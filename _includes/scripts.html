@@ -42,6 +42,26 @@ $('article').readingTime();
 <script src="{{ site.baseurl }}/admin/dashboard.js"></script>
 {% endif %}
 
+{% if page.title == "Pricing" %}
+<script src="{{ site.baseurl }}/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+</script>	
+{% endif %}
+
 {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
 <script src="{{ site.baseurl }}/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 {% endif %}

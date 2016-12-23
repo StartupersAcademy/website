@@ -12,23 +12,30 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
 <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
-{% if page.title != "Dashboard" %}
+{% if page.title != "Dashboard" or page.title != "Pricing" %}
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-{% endif%}
+{% endif %}
 
 {% if page.title != "Dashboard" %}
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
   {% else %}
   <link rel="stylesheet" href="{{ site.baseurl }}/lib/font-awesome/css/font-awesome.min.css">
-  {% endif%}
+{% endif%}
   
-  {% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
+{% if page.title == "Signin" or page.title == "Signup" or page.title == "Dashboard" %}
   <link rel="stylesheet" href="{{ site.baseurl }}/lib/bootstrap/dist/css/bootstrap.css">
-  {% endif%}
+{% endif%}
   
-  {% if page.title == "Dashboard" %}
+{% if page.title == "Dashboard" %}
   <link rel="stylesheet" href="{{ site.baseurl }}/dashboard.css">
-  {% endif%}
+{% endif%}
+
+{% if page.title == "Pricing" %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/pricing.css">
+  <!--webfonts-->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!--//webfonts-->
+{% endif%}
 
   
 </head>
