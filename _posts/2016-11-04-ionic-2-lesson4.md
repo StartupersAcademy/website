@@ -22,7 +22,7 @@ Now, we gonna learn about Classes and Objects and we gonna create our view to re
 
 ## What is an Object ?
 
-An Object is compound data: it combines other things together into a single bundle. As noted above, what makes the Object unique is that it combines data with code.
+An Object is compound data: it combines other things together into a single bundle. What makes the Object unique is that it combines data with code.
 
 ## What is a Class ?
 
@@ -41,6 +41,7 @@ if you take an eye in our App we can find this elements in our project.
 ### login.ts
 
 ````javascript
+
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class LoginPage {
@@ -49,9 +50,13 @@ export class LoginPage {
 
 ````
 
-If you see this piece of code, you can see ````ìmport```` and ````export```` words
+If you see this piece of code, you can see ````ìmport```` and ````export```` words. ````ìmport```` is the word that say
+to Ionic that you going to need create *objects* from the clases that you are importing. in the same way the word ````export````
+say to Ionic that that class that you are creating can be import in the future in other file.
 
-Now we gonna use a service. A service is a class that 
+
+Now we gonna use a service. A service is a kind of piece of code with methods that you going to reuse in diferent parts of your app.
+To create a provider we gonna use the ````generate```` command.
 
 ````javascript
 $ ionic g provider rssService
@@ -74,5 +79,7 @@ import { rssService } from '../providers/rssService';
 export class AppModule {}
 
 ````
+Ok, now we are ready to continue with our App.
+
 
 
