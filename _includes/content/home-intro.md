@@ -14,12 +14,6 @@ Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 a
 <button data-custom-highlight-color="" type="submit">Subscribe</button>
 </form>
 
-
-Do you want read something? 
-
-Go to our <a href="{{ site.url }}/allposts">Blog</a>.
-
-
 Do you want see our Templates? 
 
 Check this out [Marketplace](http://market.startupers.io)
