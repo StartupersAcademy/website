@@ -1,26 +1,33 @@
 
-# [Startupers](/)
+# [¿ Que somos ?](/)
 
-Do you have an amazing idea building the next unicorn?
+Somos un colectivo de expertos [+10.000 Horas] en Tecnología que enseñan habilidades de Alta Demanda a través de Workshops Virtuales. 
 
-Let us help you, we create amazing starters, tutorials and videos that let you have your MVP ready to go.
+## Nuestros proximos Workshops
 
+No te pierdas los Workshops que tenemos listos para Mayo.
 
-Enroll in our FREE 5 lesson course that will help take your understand Ionic 2 and Ionic Cloud.
+### Aprende a hacer un App con Ionic 3 y Firebase.
 
-<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
-<input name="seller_id" type="hidden" value="8823315497069">
-<input name="email" placeholder="Your email address" type="email">
-<button data-custom-highlight-color="" type="submit">Subscribe</button>
-</form>
+En esta oportunidad vas a aprender a autenticar tus usuarios con Firebase Auth y guardar información con Firebase Database.
 
-Do you want see our Templates? 
+Fecha: Mayo 6. 9:00 AM - 4:30PM
 
-Check this out [Marketplace](http://market.startupers.io)
+[**Inscribete Aquí.**](https://www.crowdcast.io/e/especialista-en)
 
-Quieres leer en Español? 
+*Experto:*
 
-Ir a [ion-book](http://www.ion-book.com)
+**Nicolas Molina. [@nicobytes](https://twitter.com/nicobytes)**
+
+### Aprende a hacer un App con Angular 4 y Firebase.
+
+En esta oportunidad vas a aprender a autenticar tus usuarios con Firebase Auth y guardar información con Firebase Database.
+
+Fecha: Mayo 13. 9:00 AM - 4:30PM
+
+[**Inscribete Aquí.**](https://www.crowdcast.io/e/duplicate-of-aprende-a)
+
+**Carlos Rojas. [@carlosrojas_o](https://twitter.com/carlosrojas_o)**
 
 
 
